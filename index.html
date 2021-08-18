@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+    <script>
+        let initialized = false
+        window.addEventListener("load",(e) => {
+            window.setTimeout(() => {
+                let ele = document.createElement("p")
+                ele.innerHTML = "Hello from javascript"
+                document.body.appendChild(ele)
+            }, 500)
+            initialized = true
+        })
+    </script>
+
+
+</body>
+
+</html>
